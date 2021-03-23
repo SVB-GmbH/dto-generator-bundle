@@ -1,0 +1,34 @@
+{
+    "name": "svb/dto-generator-bundle",
+    "description": "Generator for data transfer objects",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "psi@svb.de"
+        }
+    ],
+    "require": {
+        "psr/cache": "^1.0",
+        "symfony/dependency-injection": "^3.4|^4.3",
+        "symfony/http-kernel": "^3.4|^4.3",
+        "symfony/config": "^3.4|^4.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9",
+        "mockery/mockery": "^1.4",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "SVB\\DataTransfer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SVB\\DataTransfer\\": "tests/"
+        }
+    }
+}
