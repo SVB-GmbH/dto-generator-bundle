@@ -1,4 +1,5 @@
 <?php
+
 namespace SVB\DataTransfer\DependencyInjection;
 
 use SVB\DataTransfer\DtoGenerator;
