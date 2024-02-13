@@ -11,7 +11,7 @@ class DtoGeneratorCompilerPass implements CompilerPassInterface
 {
     public const HANDLER_SERVICE_TAG = 'svb.data_transfer.handler';
 
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
         $definition = $container->getDefinition(DtoGenerator::class);
 
