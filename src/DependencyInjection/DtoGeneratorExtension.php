@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
 class DtoGeneratorExtension extends ConfigurableExtension
 {
-    protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
+    protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void
     {
         $container->setParameter('svb.dto_generator.cache_service', $mergedConfig['cache_service']);
 
